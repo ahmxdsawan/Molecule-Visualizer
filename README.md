@@ -50,3 +50,8 @@ python3 server.py 5500
 2. Upload an SDF file containing the desired molecule
 3. Customize visual properties as desired
 4. View molecule from different angles and perspectives
+
+![Home Page](https://imgur.com/RPMW807)
+![Elements Page](https://imgur.com/2Ut7hV9)
+![Upload Page](https://imgur.com/pmnobQP)
+
