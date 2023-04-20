@@ -51,7 +51,17 @@ python3 server.py 5500
 3. Customize visual properties as desired
 4. View molecule from different angles and perspectives
 
+## Screenshots
+
+Here are some screenshots of the molecule visualizer in action:
+
 ![Home Page](https://i.imgur.com/RPMW807.png)
+*Figure 1: The Home Page*
+
 ![Elements Page](https://i.imgur.com/2Ut7hV9.png)
+*Figure 2: The Elements Page*
+
 ![Upload Page](https://i.imgur.com/pmnobQP.png)
+*Figure 3: The Upload Page*
+
 
