@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>File Upload</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="molecule.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+
+  <h1>File Upload</h1>
+
+  <hr>
+
+  <form id="upload-form" action="/upload.html" enctype="multipart/form-data" method="post">
+    <p>
+      <label for="sdf_file">Select an SDF file:</label>
+      <input type="file" id="sdf_file" name="sdf_file" accept=".sdf" required>
+    </p>
+    <p>
+      <label for="mol_name">Name of the molecule:</label>
+      <input type="text" id="mol_name" name="mol_name" required>
+    </p>
+    <p>
+      <input type="button" id="upload-button" value="Upload">
+    </p>
+  </form>
+  <script>
+    $(document).ready(function () {
+      $("#upload-button").click(function () {
+        var formData = new FormData($("#upload-form")[0]);
+
+        $.ajax({
+          url: "/upload.html",
+          type: "POST",
+          data: formData,
+          processData: false,
+          contentType: false,
+          success: function () {
+            alert("Upload successful!");
+            window.location.href = "/";
+          },
+          error: function () {
+            alert("Upload failed!");
+          }
+        });
+      });
+    });
+  </script>
+  <hr>
+
+  <div id="error-msg"></div>
+
+
+</body>
+
+</html>

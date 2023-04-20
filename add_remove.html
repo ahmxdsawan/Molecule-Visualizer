@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add/Remove Elements from the System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="molecule.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+
+  <h1>Add/Remove Elements from the System</h1>
+
+
+  <form id="addremove-form" action="/add_remove.html" enctype="multipart/form-data" method="post">
+
+    <label for="element_number">Element Number:</label>
+    <input type="text" id="element_number" name="element_number">
+
+    <label for="element_code">Element Code:</label>
+    <input type="text" id="element_code" maxlength="2" name="element_code">
+
+    <label for="element_name">Element Name:</label>
+    <input type="text" id="element_name" name="element_name">
+
+    <label for="color1">Color 1 (6 Charecters):</label>
+    <input type="text" id="color1" name="color1" maxlength="6" value="F0F033">
+
+    <label for="color2">Color 2 (6 Charecters):</label>
+    <input type="text" id="color2" name="color2" maxlength="6" value="000005">
+
+    <label for="color3">Color 3 (6 Charecters):</label>
+    <input type="text" id="color3" name="color3" maxlength="6" value="F0F033">
+
+    <label for="radius">Radius:</label>
+    <input type="text" id="radius" name="radius" value="40">
+
+    <!-- <button onclick="addTableRow();" type="button">Add Element</button> -->
+
+    <button name="action_type" value="add" onclick="addTableRow()">Add Element</button>
+
+    <!-- <button name="action_type" value="remove">Remove Element</button> -->
+
+
+
+    <!-- <script>
+      $(document).ready(function() {
+        $('#remove-element-button').click(function(event) {
+          event.preventDefault(); // Prevents the form from submitting
+    
+          // Get the value of the element number input field
+          var elementNumber = $('#element_number').val();
+    
+          // Send a POST request to the server with the element number to remove
+          $.post('/add_remove.html', {
+            action_type: 'remove-list',
+            element_number: elementNumber
+          }, function(response) {
+            // Handle the server's response here
+            console.log(response);
+            console.log("TEST");
+    
+            // Reload the page to show the updated table of elements
+            window.location.reload();
+          });
+        });
+      });
+    </script> -->
+
+
+
+  </form>
+  <br>
+  <br>
+  <img src="/pic.png" alt="A PNG image">
+  <hr>
+  <br>
+  <h1>List of elements you have added</h1>
+  <!-- <h3>Note - that in order to actually remove the element from the database, input the same information from the list and click the "Remove Element"</h3> -->
+  <table id="elements-table">
+    <thead>
+      <tr>
+        <th>Element Number</th>
+        <th>Element Code</th>
+        <th>Element Name</th>
+        <th>Color 1</th>
+        <th>Color 2</th>
+        <th>Color 3</th>
+        <th>Radius</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

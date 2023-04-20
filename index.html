@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Molecule Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="add_remove.html">Add / Remove Elements</a></li>
+			<li><a href="upload.html">Upload SDF</a></li>
+		</ul>
+	</nav>
+	<h1>Welcome to the Molecule Visualizer</h1>
+	<label for="molecule-select">Select a molecule:</label>
+	<select id="molecule-select">
+		<option>-- SELECT YOUR MOLECULE TO DISPLAY --</option>
+        <option value="water" data-svg="<svg version='1.1' width='1000' height='1000' xmlns='http://www.w3.org/2000/svg'>
+            <radialGradient id='Hydrogen' cx='-50%' cy='-50%' r='220%' fx='20%' fy='20%'>
+                <stop offset='0%' stop-color='#FFFFFF'/> 
+                <stop offset='50%' stop-color='#050505'/> 
+                <stop offset='100%' stop-color='#020202'/>
+            </radialGradient>
+            <radialGradient id='Carbon' cx='-50%' cy='-50%' r='220%' fx='20%' fy='20%'>
+                <stop offset='0%' stop-color='#808080'/> 
+                <stop offset='50%' stop-color='#010101'/> 
+                <stop offset='100%' stop-color='#000000'/>
+            </radialGradient>
+            <radialGradient id='Nitrogen' cx='-50%' cy='-50%' r='220%' fx='20%' fy='20%'>
+                <stop offset='0%' stop-color='#0000FF'/> 
+                <stop offset='50%' stop-color='#000005'/> 
+                <stop offset='100%' stop-color='#000002'/>
+            </radialGradient>
+            <radialGradient id='Oxygen' cx='-50%' cy='-50%' r='220%' fx='20%' fy='20%'>
+                <stop offset='0%' stop-color='#FF0000'/> 
+                <stop offset='50%' stop-color='#050000'/> 
+                <stop offset='100%' stop-color='#020000'/>
+            </radialGradient> <circle cx='586.69' cy='636.81' r='25' fill='url(#Hydrogen)'/>
+ <circle cx='500.21' cy='499.59' r='25' fill='url(#Hydrogen)'/>
+  <polygon points='494.71,605.36 503.09,587.20 590.88,627.73 582.50,645.89' fill='green'/>
+  <polygon points='490.21,499.45 510.21,499.73 508.90,596.42 488.90,596.14' fill='green'/>
+ <circle cx='498.90' cy='596.28' r='40' fill='url(#Oxygen)'/>
+</svg>">Water</option>
+       
+	</select>
+	
+	<div id="svg-container">
+		<button id="rotate-btn">Rotate</button>
+		<button id="reset-btn">Reset</button>
+	</div>
+
+
+	<!-- Add reference to the JavaScript library here -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="molecule.js"></script>
+	<hr>
+
+
+</body>
+
+</html>
