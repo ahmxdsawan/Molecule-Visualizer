@@ -36,7 +36,7 @@ INCLUDE = /usr/local/Cellar/python@3.11/3.11.0_1/Frameworks/Python.framework/Ver
 LIB = /usr/local/Cellar/python@3.11/3.11.0_1/Frameworks/Python.framework/Versions/3.11/lib
 ```
 
-3. Run the program:
+4. Run the program:
 
 ```python
 python3 server.py 5500
