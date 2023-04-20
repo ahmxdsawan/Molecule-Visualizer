@@ -52,6 +52,6 @@ python3 server.py 5500
 4. View molecule from different angles and perspectives
 
 ![Home Page](https://imgur.com/RPMW807)
-![Elements Page](https://imgur.com/2Ut7hV9)
+![Elements Page](https://i.imgur.com/2Ut7hV9.png)
 ![Upload Page](https://imgur.com/pmnobQP)
 
