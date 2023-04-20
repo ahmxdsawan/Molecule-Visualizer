@@ -51,7 +51,7 @@ python3 server.py 5500
 3. Customize visual properties as desired
 4. View molecule from different angles and perspectives
 
-![Home Page](https://imgur.com/RPMW807)
+![Home Page](https://i.imgur.com/RPMW807.png)
 ![Elements Page](https://i.imgur.com/2Ut7hV9.png)
-![Upload Page](https://imgur.com/pmnobQP)
+![Upload Page](https://i.imgur.com/pmnobQP.png)
 
