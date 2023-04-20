@@ -30,6 +30,12 @@ export LD_LIBRARY_PATH=.
 make
 ```
 
+**Note:** If you encounter an error when running `make`, such as "Python.h file not found", you may need to update the `INCLUDE` and `LIB` paths in the `Makefile` to match your own Python path. For example, if you're using Python 3.11 installed via Homebrew on macOS, you might need to change the paths to:
+```python
+INCLUDE = /usr/local/Cellar/python@3.11/3.11.0_1/Frameworks/Python.framework/Versions/3.11/include/python3.11
+LIB = /usr/local/Cellar/python@3.11/3.11.0_1/Frameworks/Python.framework/Versions/3.11/lib
+```
+
 3. Run the program:
 
 ```python
