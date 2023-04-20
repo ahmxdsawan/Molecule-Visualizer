@@ -42,7 +42,7 @@ LIB = /usr/local/Cellar/python@3.11/3.11.0_1/Frameworks/Python.framework/Version
 python3 server.py 5500
 ```
 
-NOTE: 5500 is the port number, you can choose a diffirent port number to your liking
+**Note:** 5500 is the port number, you can choose a diffirent port number to your liking
 
 ## Usage
 
