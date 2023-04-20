@@ -6,7 +6,7 @@ The Molecule Visualizer is a software tool that allows users to visualize molecu
 
 - User-friendly interface
 - High-quality 3D graphics
-- Customizable visual properties (e.g., color, texture)
+- Customizable visual properties (e.g., color, radius size)
 - Multiple viewing options
 - SQL database for storing user preferences and molecule data
 
