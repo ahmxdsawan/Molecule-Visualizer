@@ -47,8 +47,8 @@ python3 server.py 5500
 ## Usage
 
 1. Enter elements to visualize
-2. Upload an SDF file containing the desired molecule
-3. Customize visual properties as desired
+2. Customize visual properties as desired
+3. Upload an SDF file containing the desired molecule
 4. View molecule from different angles and perspectives
 
 ## Screenshots
