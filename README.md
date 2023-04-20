@@ -24,6 +24,12 @@ git clone https://github.com/your-username/molecule-visualizer.git
 export LD_LIBRARY_PATH=.
 ```
 
+3. Link the files:
+
+```python
+make
+```
+
 3. Run the program:
 
 ```python
