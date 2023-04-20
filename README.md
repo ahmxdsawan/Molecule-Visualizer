@@ -14,7 +14,9 @@ The Molecule Visualizer is a software tool that allows users to visualize molecu
 
 1. Clone the repository:
 
+```python
 git clone https://github.com/your-username/molecule-visualizer.git
+```
 
 2. Install the required dependencies:
 
