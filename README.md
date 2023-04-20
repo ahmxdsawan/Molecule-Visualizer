@@ -18,13 +18,19 @@ The Molecule Visualizer is a software tool that allows users to visualize molecu
 git clone https://github.com/your-username/molecule-visualizer.git
 ```
 
-2. Install the required dependencies:
+2. Export the dependencies:
 
-pip install -r requirements.txt
+```python
+export LD_LIBRARY_PATH=.
+```
 
 3. Run the program:
 
-python molecule_visualizer.py
+```python
+python3 server.py 5500
+```
+
+NOTE: 5500 is the port number, you can choose a diffirent port number to your liking
 
 ## Usage
 
