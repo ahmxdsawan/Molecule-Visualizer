@@ -20,10 +20,10 @@ db.create_tables()
 global_molname = ""
 global_svg = ""
 
-db['Elements'] = (1, 'H', 'Hydrogen', 'FFFFFF', '050505', '020202', 25)
-db['Elements'] = (6, 'C', 'Carbon', '808080', '010101', '000000', 40)
-db['Elements'] = (7, 'N', 'Nitrogen', '0000FF', '000005', '000002', 40)
-db['Elements'] = (8, 'O', 'Oxygen', 'FF0000', '050000', '020000', 40)
+# db['Elements'] = (1, 'H', 'Hydrogen', 'FFFFFF', '050505', '020202', 25)
+# db['Elements'] = (6, 'C', 'Carbon', '808080', '010101', '000000', 40)
+# db['Elements'] = (7, 'N', 'Nitrogen', '0000FF', '000005', '000002', 40)
+# db['Elements'] = (8, 'O', 'Oxygen', 'FF0000', '050000', '020000', 40)
 
 
 class MyHandler(BaseHTTPRequestHandler):
